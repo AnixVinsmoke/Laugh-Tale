@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout | Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Fashion<span>Store</span></a>
+  <nav><a href="index.html">Home</a><a href="shirts.html">Shop</a><a href="cart.html">🛒 Cart <span id="cart-count">0</span></a></nav>
+</header>
+
+<main class="section checkout-page">
+  <div class="shop-title"><p class="eyebrow">ALMOST THERE</p><h1>Checkout</h1><p>Enter your details to place your demo order.</p></div>
+  <form id="checkout-form" class="checkout-form">
+    <div class="form-section"><h2>Delivery Details</h2>
+      <input required id="name" placeholder="Full name">
+      <input required id="phone" type="tel" placeholder="Phone number">
+      <input required id="address" placeholder="House / Street / Area">
+      <div class="two-col"><input required id="city" placeholder="City"><input required id="pin" inputmode="numeric" placeholder="PIN code"></div>
+    </div>
+    <div class="form-section"><h2>Payment Method</h2>
+      <label class="payment-option"><input type="radio" name="payment" value="cod" checked> Cash on Delivery</label>
+      <label class="payment-option"><input type="radio" name="payment" value="upi"> UPI / Online Payment <small>(demo)</small></label>
+    </div>
+    <div class="form-section order-box"><h2>Order Total</h2><p><span>Items</span><strong id="checkout-subtotal">₹0</strong></p><p><span>Delivery</span><strong>₹50</strong></p><hr><p class="summary-total"><span>Total</span><strong id="checkout-total">₹50</strong></p></div>
+    <button class="primary-btn full-btn" type="submit">Place Demo Order</button>
+  </form>
+</main>
+<footer><p>© 2026 Fashion Store. All Rights Reserved.</p></footer>
+<script src="checkout.js"></script>
+</body>
+</html>

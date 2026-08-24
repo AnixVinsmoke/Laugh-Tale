@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laugh Tale | Premium Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Laugh Tale<span></span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shirts.html">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="cart.html" class="cart-link">🛒 Cart <span id="cart-count">0</span></a>
+  </nav>
+  <button class="menu-btn" id="menu-btn">☰</button>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-content">
+    <p class="eyebrow">NEW SEASON 2026</p>
+    <h1>Style that speaks<br><span>for you.</span></h1>
+    <p>Premium clothing, footwear and accessories designed for everyday confidence.</p>
+    <a class="primary-btn" href="shirts.html">Shop Collection →</a>
+  </div>
+</section>
+
+<section class="section" id="products">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">CURATED FOR YOU</p>
+      <h2>Featured Products</h2>
+    </div>
+    <a href="shirts.html" class="text-link">View all →</a>
+  </div>
+
+  <div class="product-list home-products">
+    <article class="product-card" data-name="Classic Shirt" data-price="999" data-image="images/tshirt.jpg">
+      <div class="product-image"><img src="images/tshirt.jpg" alt="Classic Shirt"></div>
+      <p class="product-category">ESSENTIALS</p>
+      <h3>Classic Shirt</h3>
+      <div class="price">₹999</div>
+      <button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-name="Oversized Hoodie" data-price="999" data-image="images/hoodie.jpg">
+      <div class="product-image"><img src="images/hoodie.jpg" alt="Oversized Hoodie"></div>
+      <p class="product-category">CASUAL</p>
+      <h3>Oversized Hoodie</h3>
+      <div class="price">₹999</div>
+      <button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-name="Premium Sneakers" data-price="1499" data-image="images/sneakers.jpg">
+      <div class="product-image"><img src="images/sneakers.jpg" alt="Premium Sneakers"></div>
+      <p class="product-category">FOOTWEAR</p>
+      <h3>Premium Sneakers</h3>
+      <div class="price">₹1,499</div>
+      <button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-name="Baggy Jeans" data-price="1299" data-image="images/jeans.jpg">
+      <div class="product-image"><img src="images/jeans.jpg" alt="Baggy Jeans"></div>
+      <p class="product-category">DENIM</p>
+      <h3>Baggy Jeans</h3>
+      <div class="price">₹1,299</div>
+      <button class="cart-btn">Add to Cart</button>
+    </article>
+  </div>
+</section>
+
+<section class="promo">
+  <div>
+    <p class="eyebrow">LIMITED DROP</p>
+    <h2>Refresh your wardrobe.</h2>
+    <p>Discover new fits and timeless essentials at prices you'll love.</p>
+  </div>
+  <a href="shirts.html" class="light-btn">Explore Now →</a>
+</section>
+
+<section class="section about-grid" id="about">
+  <div>
+    <p class="eyebrow">OUR STORY</p>
+    <h2>Fashion made simple.</h2>
+  </div>
+  <p>Welcome to Fashion Store — a modern fashion destination for premium-looking clothing without the premium price tag. We focus on clean designs, everyday comfort and styles that are easy to wear.</p>
+</section>
+
+<section class="features">
+  <div class="feature"><span>🚚</span><h3>Fast Delivery</h3><p>Reliable delivery across the country.</p></div>
+  <div class="feature"><span>✦</span><h3>Premium Quality</h3><p>Carefully selected styles and materials.</p></div>
+  <div class="feature"><span>↩</span><h3>Easy Returns</h3><p>A simple shopping experience from start to finish.</p></div>
+</section>
+
+<section class="newsletter" id="contact">
+  <p class="eyebrow">STAY IN THE LOOP</p>
+  <h2>Get the latest drops.</h2>
+  <p>Subscribe for new arrivals and exclusive offers.</p>
+  <form id="newsletter-form">
+    <input type="email" id="newsletter-email" placeholder="Your email address" required>
+    <button type="submit">Subscribe</button>
+  </form>
+  <small id="newsletter-message"></small>
+</section>
+</main>
+
+<footer>
+  <div>
+    <a class="logo" href="index.html">Fashion<span>Store</span></a>
+    <p>Premium fashion for everyone.</p>
+  </div>
+  <div>
+    <p>Email: anirban@Laugh Tale.com</p>
+    <p>Phone: +91 7908835016</p>
+  </div>
+  <p>© 2026 Fashion Store. All Rights Reserved.</p>
+</footer>
+
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>

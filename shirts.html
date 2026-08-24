@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Fashion Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Fashion<span>Store</span></a>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shirts.html" class="active">Shop</a>
+    <a href="index.html#about">About</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="cart.html" class="cart-link">🛒 Cart <span id="cart-count">0</span></a>
+  </nav>
+  <button class="menu-btn" id="menu-btn">☰</button>
+</header>
+
+<main class="section shop-page">
+  <div class="shop-title">
+    <p class="eyebrow">THE COLLECTION</p>
+    <h1>Shop all styles.</h1>
+    <p>Find your next favourite fit.</p>
+  </div>
+
+  <div class="shop-tools">
+    <input id="search" type="search" placeholder="🔍 Search products...">
+    <select id="category">
+      <option value="all">All Categories</option>
+      <option value="classic">Classic</option>
+      <option value="formal">Formal</option>
+      <option value="denim">Denim</option>
+      <option value="linen">Linen</option>
+      <option value="oversized">Oversized</option>
+      <option value="casual">Casual</option>
+      <option value="printed">Printed</option>
+      <option value="cropped">Cropped</option>
+    </select>
+    <select id="sort">
+      <option value="default">Sort By</option>
+      <option value="low">Price: Low to High</option>
+      <option value="high">Price: High to Low</option>
+      <option value="rating">Highest Rated</option>
+    </select>
+  </div>
+
+  <p id="result-count" class="result-count"></p>
+
+  <div class="product-list" id="shop-products">
+    <article class="product-card" data-category="classic" data-price="399" data-rating="4.5" data-name="Classic White Shirt" data-image="images/classic white shirt.jpg">
+      <div class="product-image"><span class="badge">NEW</span><img src="images/classic white shirt.jpg" alt="Classic White Shirt"></div>
+      <p class="product-category">CLASSIC</p><h3>Classic White Shirt</h3><p class="rating">★★★★★ 4.5</p><del>₹999</del><div class="price">₹399</div><button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-category="formal" data-price="999" data-rating="4.5" data-name="Black Formal Shirt" data-image="images/Black Formal Shirt.jpg">
+      <div class="product-image"><img src="images/Black Formal Shirt.jpg" alt="Black Formal Shirt"></div>
+      <p class="product-category">FORMAL</p><h3>Black Formal Shirt</h3><p class="rating">★★★★★ 4.5</p><del>₹1,299</del><div class="price">₹999</div><button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-category="denim" data-price="899" data-rating="4.5" data-name="Blue Denim Shirt" data-image="images/Blue Denim Shirt.jpg">
+      <div class="product-image"><img src="images/Blue Denim Shirt.jpg" alt="Blue Denim Shirt"></div>
+      <p class="product-category">DENIM</p><h3>Blue Denim Shirt</h3><p class="rating">★★★★★ 4.5</p><del>₹1,399</del><div class="price">₹899</div><button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-category="linen" data-price="799" data-rating="4.5" data-name="Linen Shirt" data-image="images/Linen shirt.jpg">
+      <div class="product-image"><img src="images/Linen shirt.jpg" alt="Linen Shirt"></div>
+      <p class="product-category">LINEN</p><h3>Linen Shirt</h3><p class="rating">★★★★★ 4.5</p><del>₹1,299</del><div class="price">₹799</div><button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-category="oversized" data-price="999" data-rating="4.5" data-name="Oversized Shirt" data-image="images/Oversized shirt.jpg">
+      <div class="product-image"><img src="images/Oversized shirt.jpg" alt="Oversized Shirt"></div>
+      <p class="product-category">OVERSIZED</p><h3>Oversized Shirt</h3><p class="rating">★★★★★ 4.5</p><del>₹1,299</del><div class="price">₹999</div><button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-category="casual" data-price="499" data-rating="4.5" data-name="Checked Shirt" data-image="images/checked shirt.jpg">
+      <div class="product-image"><img src="images/checked shirt.jpg" alt="Checked Shirt"></div>
+      <p class="product-category">CASUAL</p><h3>Checked Shirt</h3><p class="rating">★★★★★ 4.5</p><del>₹999</del><div class="price">₹499</div><button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-category="printed" data-price="599" data-rating="4.5" data-name="Printed Shirt" data-image="images/printed shirt.jpg">
+      <div class="product-image"><img src="images/printed shirt.jpg" alt="Printed Shirt"></div>
+      <p class="product-category">PRINTED</p><h3>Printed Shirt</h3><p class="rating">★★★★★ 4.5</p><del>₹1,199</del><div class="price">₹599</div><button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-category="casual" data-price="799" data-rating="4.5" data-name="Casual Shirt" data-image="images/casual shirt.jpg">
+      <div class="product-image"><img src="images/casual shirt.jpg" alt="Casual Shirt"></div>
+      <p class="product-category">CASUAL</p><h3>Casual Shirt</h3><p class="rating">★★★★★ 4.5</p><del>₹1,399</del><div class="price">₹799</div><button class="cart-btn">Add to Cart</button>
+    </article>
+
+    <article class="product-card" data-category="cropped" data-price="699" data-rating="4.5" data-name="Cropped Shirt" data-image="images/cropped shirt.jpg">
+      <div class="product-image"><img src="images/cropped shirt.jpg" alt="Cropped Shirt"></div>
+      <p class="product-category">CROPPED</p><h3>Cropped Shirt</h3><p class="rating">★★★★★ 4.5</p><del>₹1,299</del><div class="price">₹699</div><button class="cart-btn">Add to Cart</button>
+    </article>
+  </div>
+  <div id="no-results" class="empty-state hidden">No products match your search.</div>
+</main>
+
+<footer><p>© 2026 Fashion Store. All Rights Reserved.</p></footer>
+<div id="toast" class="toast"></div>
+<script src="script.js"></script>
+</body>
+</html>
